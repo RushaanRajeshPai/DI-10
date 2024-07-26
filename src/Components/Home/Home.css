@@ -1,0 +1,98 @@
+.homemain {
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+    margin-left: 80px;
+}
+
+#green {
+    margin-top: -80px;
+    margin-left: -80px;
+}
+
+#black {
+    margin-left: -100px;
+}
+
+.homeright {
+    margin-left: 200px;
+}
+
+#homeh1 {
+    font-size: 60px;
+    line-height: 1.1;
+}
+
+#openbtn1 {
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: black;
+    background-color: #FFDD33;
+}
+
+#cardbtn {
+    height: 35px;
+    width: 150px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+}
+
+.homebtns {
+    gap: 1vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.homeend {
+    margin-top: 20px;
+}
+
+#homep {
+    color: #918EA4;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .homemain {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homeleft,
+    .homemid,
+    .homeright {
+        width: 100%;
+        padding: 0;
+    }
+
+    .homebtns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homebtns button {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .homeleft,
+    .homemid,
+    .homeright {
+        padding: 1rem;
+    }
+
+    #homeh1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #homep {
+        text-align: center;
+    }
+}
